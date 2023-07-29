@@ -12,6 +12,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "webpack-dev-server": "^3"
   }
 }
