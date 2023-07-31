@@ -1,1 +1,30 @@
-<div>Add MenuBar template here</div>
+<nav class="flex items-center px-24 h-24 border justify-between">
+  <%= link_to root_path, class: "flex items-center gap-1 text-blue-600 hover:text-blue-800" do %>
+    <i class="fa-brands fa-opencart text-4xl"></i>
+    <span class="font-bold text-3xl">MyStore</span>
+  <% end %>
+
+  <ul class="flex">
+    <li class="mr-6">
+      <%= link_to "Home", "#", class: "text-blue-600 hover:text-blue-800 uppercase" %>
+    </li>
+    <li class="mr-6">
+      <%= link_to "Shop", "#", class: "text-blue-600 hover:text-blue-800 uppercase" %>
+    </li>
+    <li class="mr-6">
+      <%= link_to "Blog", "#", class: "text-blue-600 hover:text-blue-800 uppercase" %>
+    </li>
+    <li class="mr-6">
+      <%= link_to "About", "#", class: "text-blue-600 hover:text-blue-800 uppercase" %>
+    </li>
+  </ul>
+
+  <div class="flex gap-2 items-center"> 
+    <button type="button" class="flex items-center justify-center w-8 h-8 rounded-full border-2 text-gray-600 hover:text-white hover:bg-blue-600 hover:bg-blue-800">
+      <i class="fa-solid fa-cart-shopping fa-xs"></i>
+    </button>
+    <button type="button" class="flex items-center justify-center w-8 h-8 rounded-full border-2 text-gray-600 hover:text-white hover:bg-blue-600 hover:bg-blue-800">
+      <i class="fa-solid fa-heart fa-xs"></i>
+    </button>
+  </div>
+</nav>
