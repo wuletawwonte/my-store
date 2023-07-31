@@ -1,24 +1,30 @@
-<div class="flex pl-24 pr-24 h-8 border items-center justify-between text-gray-900 dark:text-white">
+<div class="flex pl-24 pr-24 h-8 items-center justify-between bg-gray-200 text-gray-900 dark:text-white">
   <span class="flex items-center">
     <i class="fa-solid fa-envelope mr-1"></i>
     <a href="mailto:wuletawwonte@gmail.com">wuletawwonte@gmail.com</a>
   </span>
 
   <span class="flex gap-4">
-    <%= link_to "https://www.facebook.com", target: "_blank" do %>
-      <i class="fa-brands fa-facebook-f"></i>
-    <% end %>
-    <%= link_to "https://www.facebook.com", target: "_blank" do %>
-      <i class="fa-brands fa-twitter"></i>
-    <% end %>
-    <%= link_to "https://www.facebook.com", target: "_blank" do %>
-      <i class="fa-brands fa-linkedin"></i>
-    <% end %>
-    <%= link_to "https://www.facebook.com", target: "_blank" do %>
-      <i class="fa-brands fa-github"></i>
-    <% end %>
-
-
+    <span class="flex gap-4 pr-4 border-r-2 border-gray-400">
+      <%= link_to "https://www.facebook.com", target: "_blank" do %>
+        <i class="fa-brands fa-facebook-f"></i>
+      <% end %>
+      <%= link_to "https://www.facebook.com", target: "_blank" do %>
+        <i class="fa-brands fa-twitter"></i>
+      <% end %>
+      <%= link_to "https://www.facebook.com", target: "_blank" do %>
+        <i class="fa-brands fa-linkedin"></i>
+      <% end %>
+      <%= link_to "https://www.facebook.com", target: "_blank" do %>
+        <i class="fa-brands fa-github"></i>
+      <% end %>
+    </span>
+    <span class="flex items-center">
+      <%= link_to root_path do %>
+        <i class="fa-solid fa-user mr-1"></i>
+        <span>login</span>
+      <% end %>
+    </span>
   </span>
 
 </div>
