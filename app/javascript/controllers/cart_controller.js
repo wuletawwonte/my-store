@@ -5,7 +5,7 @@ export default class extends Controller {
     this.element.classList.add("hidden");
   }
 
-  show() {
+  show() {    
     this.element.classList.remove("hidden");
   }
 }
