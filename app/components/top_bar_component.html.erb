@@ -1,0 +1,41 @@
+<div class="flex px-24 h-8 items-center justify-between bg-gray-200 text-gray-700 hover:text-gray-900 dark:text-white">
+  <span class="flex items-center">
+    <i class="fa-solid fa-envelope mr-1"></i>
+    <a href="mailto:wuletawwonte@gmail.com">wuletawwonte@gmail.com</a>
+  </span>
+
+  <span class="flex gap-4">
+    <span class="flex gap-4 pr-4 border-r-2 border-gray-400">
+      <%= link_to "https://www.facebook.com", target: "_blank" do %>
+        <i class="fa-brands fa-facebook-f"></i>
+      <% end %>
+      <%= link_to "https://www.facebook.com", target: "_blank" do %>
+        <i class="fa-brands fa-twitter"></i>
+      <% end %>
+      <%= link_to "https://www.linkedin.com/in/wuletaw-wonte", target: "_blank" do %>
+        <i class="fa-brands fa-linkedin"></i>
+      <% end %>
+      <%= link_to "https://github.com/wuletawwonte", target: "_blank" do %>
+        <i class="fa-brands fa-github"></i>
+      <% end %>
+    </span>
+    <span class="flex items-center">
+      <div class="relative" data-controller="dropdown">
+        <button type="button" data-dropdown-target="toggle" data-action="click->dropdown#toggle">
+          <i class="fa-solid fa-user mr-1"></i>
+          <span>login</span>
+        </button>
+
+        <div data-dropdown-target="menu" class="absolute hidden right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+          <div class="py-1" role="none">
+            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
+          </div>
+        </div>
+      </div>
+    </span>
+  </span>
+
+</div>

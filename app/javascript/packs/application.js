@@ -12,3 +12,6 @@ import "stylesheets/application"
 
 Rails.start()
 Turbolinks.start()
+
+import "controllers"
+import "@fortawesome/fontawesome-free/css/all"
