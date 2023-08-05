@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
     @response = Faraday.get('https://fakestoreapi.com/products').body
-    @products = JSON.parse(@response)    
+    @products = JSON.parse(@response)
   end
 end

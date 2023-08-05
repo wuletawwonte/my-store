@@ -55,3 +55,5 @@ gem 'view_component', require: 'view_component/engine'
 gem 'faraday', '~> 2.7', '>= 2.7.10'
 
 gem 'turbo-rails'
+
+gem 'dry-initializer', '~> 3.1'
