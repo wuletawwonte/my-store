@@ -1,6 +1,17 @@
-<div>
-  <h1>Hi</h1>
-  <p>Thanks for registering on our site.</p>
-  <p>Click the link below to verify your email address.</p>
-  <a href="#">Verify Email</a>
+<div class="group relative shadow-md hover:shadow-xl">
+  <div class="p-4 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white lg:aspect-none group-hover:opacity-75 lg:h-80">
+    <%= image_tag image_url, class: "h-full w-full object-contain object-center lg:h-full lg:w-full" %>
+  </div>
+  <div class="mt-4 flex justify-between p-6">
+    <div>
+      <h3 class="text-sm text-gray-700">
+        <a href="#">
+          <span aria-hidden="true" class="absolute inset-0"></span>
+          <%= title %>
+        </a>
+      </h3>
+      <p class="mt-1 text-sm text-gray-500">Black</p>
+    </div>
+    <p class="text-sm font-medium text-gray-900">$<%= price %></p>
+  </div>
 </div>
