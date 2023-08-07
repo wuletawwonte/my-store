@@ -5,13 +5,12 @@
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
+import "@hotwired/turbo-rails"
 import "channels"
-
-// Tailwind CSS
-import "stylesheets/application"
+import "controllers"
+import "@fortawesome/fontawesome-free/css/all"
+import "stylesheets/application" // Tailwindcss
 
 Rails.start()
 Turbolinks.start()
 
-import "controllers"
-import "@fortawesome/fontawesome-free/css/all"

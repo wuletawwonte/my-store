@@ -16,7 +16,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
+gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -51,3 +51,9 @@ end
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 gem 'view_component', require: 'view_component/engine'
+
+gem 'faraday', '~> 2.7', '>= 2.7.10'
+
+gem 'turbo-rails'
+
+gem 'dry-initializer', '~> 3.1'

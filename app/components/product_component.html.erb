@@ -1,0 +1,22 @@
+<div class="group flex flex-col relative border shadow-md hover:shadow-xl">
+  <div class="p-4 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-white lg:aspect-none group-hover:opacity-75 lg:h-80">
+    <%= image_tag image_url, class: "h-full w-full object-contain object-center lg:h-full lg:w-full" %>
+  </div>
+  <div class="grow flex flex-col justify-between p-6">
+    <div class="mt-4 flex justify-between">
+      <div>
+        <h3 class="text-sm text-gray-700">
+          <a href="#">
+            <span aria-hidden="true" class="absolute inset-0"></span>
+            <%= title %>
+          </a>
+        </h3>h-full
+        <p class="mt-1 text-sm text-gray-500">Black</p>
+      </div>
+      <p class="text-sm font-medium text-gray-900">$<%= price %></p>
+    </div>
+    <button class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-sm text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+      Add to Cart
+    </button>
+  </div>
+</div>
